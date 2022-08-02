@@ -20,6 +20,7 @@
 		BDD49C8A2898621F00298E13 /* ToDoYourPartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD49C892898621F00298E13 /* ToDoYourPartTests.swift */; };
 		BDD49C942898621F00298E13 /* ToDoYourPartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD49C932898621F00298E13 /* ToDoYourPartUITests.swift */; };
 		BDD49C962898621F00298E13 /* ToDoYourPartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD49C952898621F00298E13 /* ToDoYourPartUITestsLaunchTests.swift */; };
+		BDFB7AC828999FAE00BBC2D7 /* MonthlyChalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB7AC728999FAE00BBC2D7 /* MonthlyChalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		BDD49C8F2898621F00298E13 /* ToDoYourPartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoYourPartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD49C932898621F00298E13 /* ToDoYourPartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoYourPartUITests.swift; sourceTree = "<group>"; };
 		BDD49C952898621F00298E13 /* ToDoYourPartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoYourPartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BDFB7AC728999FAE00BBC2D7 /* MonthlyChalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyChalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				BDD49C712898621E00298E13 /* SceneDelegate.swift */,
 				BDD49C732898621E00298E13 /* ViewController.swift */,
 				BDD49C752898621E00298E13 /* Main.storyboard */,
+				BDFB7AC728999FAE00BBC2D7 /* MonthlyChalViewController.swift */,
 				BDD49C7B2898621F00298E13 /* Assets.xcassets */,
 				BDD49C7D2898621F00298E13 /* LaunchScreen.storyboard */,
 				BDD49C802898621F00298E13 /* Info.plist */,
@@ -277,6 +280,7 @@
 			files = (
 				BDD49C742898621E00298E13 /* ViewController.swift in Sources */,
 				BDD49C7A2898621E00298E13 /* ToDoYourPart.xcdatamodeld in Sources */,
+				BDFB7AC828999FAE00BBC2D7 /* MonthlyChalViewController.swift in Sources */,
 				BDD49C702898621E00298E13 /* AppDelegate.swift in Sources */,
 				BDD49C722898621E00298E13 /* SceneDelegate.swift in Sources */,
 			);
