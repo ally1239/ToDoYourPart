@@ -11,6 +11,7 @@
 		BD9D06EF28997DF100D745EE /* Screen Shot 2022-08-02 at 11.44.02 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = BD9D06EE28997DF100D745EE /* Screen Shot 2022-08-02 at 11.44.02 AM.png */; };
 		BD9D06F32899812100D745EE /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = BD9D06F22899812100D745EE /* profile.png */; };
 		BD9D07752899ACC500D745EE /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9D07742899ACC500D745EE /* profileViewController.swift */; };
+		BDC7AC4B289AC42E004D58B6 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC7AC4A289AC42E004D58B6 /* CameraViewController.swift */; };
 		BDD49C702898621E00298E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD49C6F2898621E00298E13 /* AppDelegate.swift */; };
 		BDD49C722898621E00298E13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD49C712898621E00298E13 /* SceneDelegate.swift */; };
 		BDD49C742898621E00298E13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD49C732898621E00298E13 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		BD9D06EE28997DF100D745EE /* Screen Shot 2022-08-02 at 11.44.02 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2022-08-02 at 11.44.02 AM.png"; sourceTree = "<group>"; };
 		BD9D06F22899812100D745EE /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		BD9D07742899ACC500D745EE /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		BDC7AC4A289AC42E004D58B6 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		BDD49C6C2898621E00298E13 /* ToDoYourPart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoYourPart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD49C6F2898621E00298E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD49C712898621E00298E13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				BDD49C712898621E00298E13 /* SceneDelegate.swift */,
 				BDD49C732898621E00298E13 /* ViewController.swift */,
 				BDD49C752898621E00298E13 /* Main.storyboard */,
+				BDC7AC4A289AC42E004D58B6 /* CameraViewController.swift */,
 				BD9D07742899ACC500D745EE /* profileViewController.swift */,
 				BDFB7AC728999FAE00BBC2D7 /* MonthlyChalViewController.swift */,
 				BDD49C7B2898621F00298E13 /* Assets.xcassets */,
@@ -285,6 +288,7 @@
 				BDD49C7A2898621E00298E13 /* ToDoYourPart.xcdatamodeld in Sources */,
 				BD9D07752899ACC500D745EE /* profileViewController.swift in Sources */,
 				BDFB7AC828999FAE00BBC2D7 /* MonthlyChalViewController.swift in Sources */,
+				BDC7AC4B289AC42E004D58B6 /* CameraViewController.swift in Sources */,
 				BDD49C702898621E00298E13 /* AppDelegate.swift in Sources */,
 				BDD49C722898621E00298E13 /* SceneDelegate.swift in Sources */,
 			);
