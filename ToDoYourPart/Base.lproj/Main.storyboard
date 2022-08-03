@@ -41,17 +41,6 @@
                                 <color key="textColor" red="0.35761765569999998" green="0.34746572799999997" blue="0.64892969300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubh-Hl-lKM">
-                                <rect key="frame" x="126" y="743" width="163" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Main Menu">
-                                    <color key="baseBackgroundColor" red="0.43065718609999998" green="0.41932036579999998" blue="0.78291004090000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="ZuF-K4-3aF" kind="presentation" modalPresentationStyle="fullScreen" id="RJ6-jl-Ach"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.90891157918327758" green="0.8994545542688609" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
