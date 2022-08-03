@@ -16,13 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cool Down" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lH-zo-WMa">
-                                <rect key="frame" x="119" y="81" width="177" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="38"/>
-                                <color key="textColor" red="0.43065718605345554" green="0.4193203658457717" blue="0.78291004091030925" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmG-jG-yJ3">
                                 <rect key="frame" x="172" y="552" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -30,23 +23,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjJ-8X-msC">
-                                <rect key="frame" x="0.0" y="286" width="414" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjJ-8X-msC">
+                                <rect key="frame" x="0.0" y="655" width="414" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Didot-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.38431376220000002" green="0.61960786580000005" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Fact!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euo-Oa-wzk">
-                                <rect key="frame" x="167" y="203" width="80" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image from iOS.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gud-hG-Dlj">
+                                <rect key="frame" x="-85" y="176" width="585" height="416"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.35761765569999998" green="0.34746572799999997" blue="0.64892969300000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.90891157918327758" green="0.8994545542688609" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="Vok-Ok-8FC"/>
                     <navigationItem key="navigationItem" id="9Vc-tZ-Ip5"/>
@@ -428,9 +424,15 @@ hasn't completed their tasks yet!</string>
                                 <rect key="frame" x="0.0" y="219" width="414" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Recycle">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                    <color key="baseBackgroundColor" red="0.21421239110000001" green="0.4150974455" blue="0.34617813139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Recycle">
+                                            <attributes>
+                                                <font key="NSFont" size="34" name="Didot"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.38431376220000002" green="0.61960786580000005" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="1q7-p2-RYd" kind="show" id="s6E-zq-Ogs"/>
@@ -442,7 +444,7 @@ hasn't completed their tasks yet!</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Bike ">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                    <color key="baseBackgroundColor" red="0.21421239110000001" green="0.4150974455" blue="0.34617813139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.38431376220000002" green="0.61960786580000005" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="CR3-jj-fMI" kind="show" id="Tgs-GO-BRp"/>
@@ -454,7 +456,7 @@ hasn't completed their tasks yet!</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Walk">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                    <color key="baseBackgroundColor" red="0.21421239110000001" green="0.4150974455" blue="0.34617813139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.38431376220000002" green="0.61960786580000005" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cd-7f-FYZ">
@@ -463,7 +465,7 @@ hasn't completed their tasks yet!</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Take a 5 minute shower">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                    <color key="baseBackgroundColor" red="0.21421239110000001" green="0.4150974455" blue="0.34617813139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.38431376220000002" green="0.61960786580000005" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2Q-Nk-VQA">
@@ -472,16 +474,22 @@ hasn't completed their tasks yet!</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Brings bags to market">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                    <color key="baseBackgroundColor" red="0.21421239110000001" green="0.4150974455" blue="0.34617813139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.38431376220000002" green="0.61960786580000005" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6N-SK-MqG">
                                 <rect key="frame" x="0.0" y="124" width="414" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Reusable Water Bottle">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                    <color key="baseBackgroundColor" red="0.21421239110000001" green="0.4150974455" blue="0.34617813139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Reusable Water Bottle">
+                                            <attributes>
+                                                <font key="NSFont" size="34" name="Didot"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.38431376220000002" green="0.61960786580000005" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="kOI-sm-zGV" kind="show" id="Nuj-em-yaF"/>
@@ -493,9 +501,22 @@ hasn't completed their tasks yet!</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title=" Eat vegetarian for a day">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
-                                    <color key="baseBackgroundColor" red="0.28308381849999997" green="0.38238753390000002" blue="0.34581405659999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.38431376220000002" green="0.61960786580000005" blue="0.46666663889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxy-vJ-5XU">
+                                <rect key="frame" x="168" y="61" width="78" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tasks">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="29" name="Didot-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wbb-2T-kQR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -514,33 +535,44 @@ hasn't completed their tasks yet!</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="recycle" translatesAutoresizingMaskIntoConstraints="NO" id="ROx-Ah-szy">
-                                <rect key="frame" x="82" y="100" width="251" height="147"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrX-uL-p19">
+                                <rect key="frame" x="99" y="255" width="216" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a pic of you recycling!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrX-uL-p19">
-                                <rect key="frame" x="104" y="255" width="206" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Take a pic of you recycling!">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Didot-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't know what to recycle??" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7X-DT-EST">
-                                <rect key="frame" x="104" y="409" width="223" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7X-DT-EST">
+                                <rect key="frame" x="95" y="409" width="224" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Don't know what to recycle??">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Didot"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ct-CO-Mu0">
-                                <rect key="frame" x="114" y="438" width="213" height="82"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ct-CO-Mu0">
+                                <rect key="frame" x="98" y="439" width="218" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">          Find out more 
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">          Find out more 
 information about what you 
 recycle and what recycle 
 number your state recycles.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Didot"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="RRB-8a-vbr">
@@ -556,6 +588,10 @@ number your state recycles.</string>
                                     <segue destination="1V4-wc-wsJ" kind="presentation" modalPresentationStyle="fullScreen" id="gmT-Ty-N4o"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="recycle" translatesAutoresizingMaskIntoConstraints="NO" id="ROx-Ah-szy">
+                                <rect key="frame" x="82" y="100" width="251" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EIJ-Aq-gAv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -596,11 +632,16 @@ number your state recycles.</string>
                                 <rect key="frame" x="141" y="759" width="132" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a pic of you biking!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duf-kC-Sz0">
-                                <rect key="frame" x="116" y="258" width="183" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duf-kC-Sz0">
+                                <rect key="frame" x="116" y="258" width="195" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Take a pic of you biking!">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Didot-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knF-0u-Wp4">
@@ -630,15 +671,16 @@ number your state recycles.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waterBottle" translatesAutoresizingMaskIntoConstraints="NO" id="SYQ-QJ-vaD">
-                                <rect key="frame" x="64" y="82" width="263" height="164"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZw-jn-kv4">
+                                <rect key="frame" x="22" y="254" width="371" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a pic of you using a reusable water bottle!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZw-jn-kv4">
-                                <rect key="frame" x="38" y="254" width="356" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Take a pic of you using a reusable water bottle!">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Didot-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="7g8-In-79n">
@@ -654,6 +696,10 @@ number your state recycles.</string>
                                     <segue destination="1V4-wc-wsJ" kind="presentation" modalPresentationStyle="fullScreen" id="kqn-NH-jNA"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waterBottle" translatesAutoresizingMaskIntoConstraints="NO" id="SYQ-QJ-vaD">
+                                <rect key="frame" x="56" y="82" width="263" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6G5-kA-CV0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -771,25 +817,16 @@ number your state recycles.</string>
                                 <rect key="frame" x="325" y="675" width="37" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.1268521276" green="0.27711258970000002" blue="0.39062887969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Retake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lA-0Z-vYB">
-                                <rect key="frame" x="39" y="676" width="57" height="21"/>
+                                <rect key="frame" x="38" y="676" width="66" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.1268521276" green="0.27711258970000002" blue="0.39062887969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y8-cB-ZLJ">
-                                <rect key="frame" x="306" y="663" width="75" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title=""/>
-                                <connections>
-                                    <segue destination="GnN-Zq-UbT" kind="presentation" modalPresentationStyle="fullScreen" id="c3M-dE-IiB"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKB-dW-6cd">
                                 <rect key="frame" x="164" y="779" width="99" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -799,12 +836,36 @@ number your state recycles.</string>
                                     <action selector="cameraTapped:" destination="1V4-wc-wsJ" eventType="touchUpInside" id="IWM-H3-gUY"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image from iOS (1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mnc-zV-GyT">
+                                <rect key="frame" x="20" y="107" width="374" height="470"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y8-cB-ZLJ">
+                                <rect key="frame" x="306" y="663" width="75" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <segue destination="GnN-Zq-UbT" kind="presentation" modalPresentationStyle="fullScreen" id="c3M-dE-IiB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otf-lU-boK">
+                                <rect key="frame" x="20" y="184" width="374" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X0Y-Fg-reg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                     </view>
                     <connections>
+                        <outlet property="pictureLabel" destination="otf-lU-boK" id="CnU-s2-yyQ"/>
                         <outlet property="postText" destination="wnD-Os-Dp4" id="OWb-dH-Jjh"/>
+                        <outlet property="retakeText" destination="3lA-0Z-vYB" id="0c2-hm-kNy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPO-h7-6YF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -819,26 +880,66 @@ number your state recycles.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Picture:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcP-MH-B6k">
-                                <rect key="frame" x="178" y="83" width="59" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcP-MH-B6k">
+                                <rect key="frame" x="183" y="73" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Post">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="Didot-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caption:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pax-Uw-XUD">
-                                <rect key="frame" x="178" y="413" width="64" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pax-Uw-XUD">
+                                <rect key="frame" x="178" y="571" width="66" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Caption:">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="Didot"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Using reusable water bottles at Kode With Klossy!!" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGe-ql-YYk">
-                                <rect key="frame" x="40" y="482" width="354" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="eGe-ql-YYk">
+                                <rect key="frame" x="34" y="601" width="354" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image from iOS (1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="J2q-2Z-dpS">
+                                <rect key="frame" x="20" y="124" width="374" height="323"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKB-I1-Gba">
+                                <rect key="frame" x="143" y="696" width="128" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Post!">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Didot"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.35686278339999999" green="0.47450977560000002" blue="0.60392159219999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="g42-8p-XsX" kind="presentation" modalPresentationStyle="fullScreen" id="6Cb-Ia-jw5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9be-rr-NpN">
+                                <rect key="frame" x="325" y="54" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Qe-Ox-qYf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -853,110 +954,194 @@ number your state recycles.</string>
             <objects>
                 <viewController id="g42-8p-XsX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0JU-NI-a5M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNu-II-c1f">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjW-ly-Y1k">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1473"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q76-VT-4vb">
-                                        <rect key="frame" x="169" y="52" width="76" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Feed">
-                                                <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="32" name="HelveticaNeue-Bold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3C-84-c8e">
-                                        <rect key="frame" x="8" y="124" width="118" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="doglover123">
-                                                <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="21" name="HelveticaNeue"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="long-lines-straight-line-transparent-7" translatesAutoresizingMaskIntoConstraints="NO" id="KoB-I9-jeo">
-                                        <rect key="frame" x="-63" y="52" width="541" height="135"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nextek-Recycling-Bottles-Hand-AdobeStock_320996786" translatesAutoresizingMaskIntoConstraints="NO" id="wYO-92-oIq">
-                                        <rect key="frame" x="29" y="36" width="357" height="459"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wh-uo-vfL">
-                                        <rect key="frame" x="8" y="381" width="265" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="doglover123 I recycled today!">
-                                                <attributes>
-                                                    <font key="NSFont" size="20" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtT-Ie-HkZ">
-                                        <rect key="frame" x="8" y="454" width="139" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="user987654321">
-                                                <attributes>
-                                                    <font key="NSFont" size="20" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-02 at 11.29.20 AM" translatesAutoresizingMaskIntoConstraints="NO" id="VaN-as-N4J">
-                                        <rect key="frame" x="8" y="503" width="398" height="241"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5f-ss-2Mj">
-                                        <rect key="frame" x="8" y="752" width="360" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">user987654321: I love my new reusable 
-water bottle! Reminder to use yours
-today!</string>
-                                                <attributes>
-                                                    <font key="NSFont" size="20" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                        <tabStops/>
-                                                    </paragraphStyle>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSf-zf-CGZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1600"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfQ-sw-0Io">
+                                                <rect key="frame" x="171" y="0.0" width="74" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Feed">
+                                                        <attributes>
+                                                            <font key="NSFont" size="34" name="Didot"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image from iOS (1).jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QWb-Cx-x4m">
+                                                <rect key="frame" x="-7" y="102" width="428" height="283"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJL-q8-PmO">
+                                                <rect key="frame" x="8" y="70" width="223" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="KodeWithKlosslay">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="21" name="Didot-Bold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyJ-43-Duj">
+                                                <rect key="frame" x="8" y="393" width="387" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="KodeWithKlosslay">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name="Didot-Bold"/>
+                                                            <font key="NSOriginalFont" size="17" name="Didot-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content"> Using reusable water bottles at 
+Kode With Klossy!!</string>
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name="Didot"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeL-6h-gaY">
+                                                <rect key="frame" x="8" y="786" width="360" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="johnnyappleseed333 ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name="Didot-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Biking is so refreshing!">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name="Didot"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="🤣">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name=".AppleColorEmojiUI"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzm-TD-agY">
+                                                <rect key="frame" x="8" y="486" width="199" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="johnnyappleseed333">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="21" name="Didot-Bold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGJ-dm-AAW">
+                                                <rect key="frame" x="8" y="881" width="115" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="doglover123">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="21" name="Didot-Bold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-03 at 1.53.58 PM" translatesAutoresizingMaskIntoConstraints="NO" id="O40-kE-SK8">
+                                                <rect key="frame" x="35" y="518" width="343" height="260"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nextek-Recycling-Bottles-Hand-AdobeStock_320996786" translatesAutoresizingMaskIntoConstraints="NO" id="icX-Q5-hVU">
+                                                <rect key="frame" x="38" y="916" width="341" height="194"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xY4-rT-Jdm">
+                                                <rect key="frame" x="8" y="1118" width="281" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="doglover123">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name="Didot-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" Had fun recycling today">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name="Didot"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9y-OM-AF9">
+                                                <rect key="frame" x="356" y="6" width="44" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="🏠"/>
+                                                <connections>
+                                                    <segue destination="ZuF-K4-3aF" kind="presentation" modalPresentationStyle="fullScreen" id="mIV-XX-9FV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1600" id="Ele-b6-umX"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1400" id="h6S-jH-5p4"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1400" id="wW0-UB-aps"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.89682401247865973" green="0.944717386271134" blue="0.89250099539574745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="fwq-EJ-IKT"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="aiN-2Y-J0K"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cSf-zf-CGZ" secondAttribute="trailing" id="0Co-hZ-TqH"/>
+                                    <constraint firstAttribute="bottom" secondItem="cSf-zf-CGZ" secondAttribute="bottom" id="RrC-Ng-JI3"/>
+                                    <constraint firstItem="cSf-zf-CGZ" firstAttribute="leading" secondItem="yjW-ly-Y1k" secondAttribute="leading" id="iCR-Ns-1Dv"/>
+                                    <constraint firstItem="cSf-zf-CGZ" firstAttribute="top" secondItem="yjW-ly-Y1k" secondAttribute="top" id="pBx-bQ-dl8"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Aq-SH-Bmm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cSf-zf-CGZ" firstAttribute="width" secondItem="0JU-NI-a5M" secondAttribute="width" id="6hf-J5-tAm"/>
+                            <constraint firstItem="yjW-ly-Y1k" firstAttribute="top" secondItem="7Aq-SH-Bmm" secondAttribute="top" id="HKW-da-oUC"/>
+                            <constraint firstItem="yjW-ly-Y1k" firstAttribute="bottom" secondItem="7Aq-SH-Bmm" secondAttribute="bottom" id="dPx-Jq-Ul4"/>
+                            <constraint firstItem="yjW-ly-Y1k" firstAttribute="leading" secondItem="7Aq-SH-Bmm" secondAttribute="leading" id="hrM-tX-tNe"/>
+                            <constraint firstItem="yjW-ly-Y1k" firstAttribute="trailing" secondItem="7Aq-SH-Bmm" secondAttribute="trailing" id="vc4-wL-wkr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" id="sFg-mX-bG5"/>
+                    <navigationItem key="navigationItem" id="H3v-Nu-etF"/>
+                    <size key="freeformSize" width="414" height="1600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXZ-HA-vWh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2158" y="-450"/>
+            <point key="canvasLocation" x="2147.826086956522" y="-759.375"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gMI-zz-PrS">
@@ -982,19 +1167,21 @@ today!</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lTg-UH-Ya2"/>
-        <segue reference="gmT-Ty-N4o"/>
+        <segue reference="mIV-XX-9FV"/>
+        <segue reference="RxG-aH-9mj"/>
+        <segue reference="kqn-NH-jNA"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Image from iOS (1).jpg" width="3605" height="3024"/>
+        <image name="Image from iOS.jpg" width="558.54547119140625" height="558.54547119140625"/>
         <image name="LiveCamera" width="100" height="86"/>
         <image name="Nextek-Recycling-Bottles-Hand-AdobeStock_320996786" width="1540" height="800"/>
-        <image name="Screen Shot 2022-08-02 at 11.29.20 AM" width="2164" height="1434"/>
+        <image name="Screen Shot 2022-08-03 at 1.53.58 PM" width="1880" height="1396"/>
         <image name="TopCamera" width="158" height="82"/>
         <image name="bike" width="1000" height="750"/>
         <image name="camera" width="722" height="668"/>
         <image name="circle" width="600" height="596"/>
         <image name="flipCamera" width="86" height="92"/>
-        <image name="long-lines-straight-line-transparent-7" width="1400" height="400"/>
         <image name="profile.png" width="124" height="124"/>
         <image name="pullDownArrow" width="136" height="106"/>
         <image name="recycle" width="320" height="320"/>

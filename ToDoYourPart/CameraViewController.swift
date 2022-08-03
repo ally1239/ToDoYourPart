@@ -11,10 +11,17 @@ class CameraViewController: UIViewController {
 
     @IBOutlet weak var postText: UILabel!
     
+    @IBOutlet weak var retakeText: UILabel!
+    
+    
+    @IBOutlet weak var pictureLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
         postText.isHidden = true
+        retakeText.isHidden = true
+        pictureLabel.isHidden = false
 
         // Do any additional setup after loading the view.
     }
@@ -33,6 +40,8 @@ class CameraViewController: UIViewController {
     
     @IBAction func cameraTapped(_ sender: UIButton) {
         postText.isHidden = false
+        retakeText.isHidden = false
+        pictureLabel.isHidden = true
     }
     
 

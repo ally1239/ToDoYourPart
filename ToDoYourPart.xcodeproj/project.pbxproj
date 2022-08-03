@@ -11,6 +11,9 @@
 		BD9D06EF28997DF100D745EE /* Screen Shot 2022-08-02 at 11.44.02 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = BD9D06EE28997DF100D745EE /* Screen Shot 2022-08-02 at 11.44.02 AM.png */; };
 		BD9D06F32899812100D745EE /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = BD9D06F22899812100D745EE /* profile.png */; };
 		BD9D07752899ACC500D745EE /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9D07742899ACC500D745EE /* profileViewController.swift */; };
+		BD9D8C17289AE91400F2C561 /* Image from iOS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD9D8C16289AE91400F2C561 /* Image from iOS.jpg */; };
+		BD9D8C19289AED1600F2C561 /* Image from iOS (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD9D8C18289AED1600F2C561 /* Image from iOS (1).jpg */; };
+		BD9D8C1B289AED9500F2C561 /* jpg.webp in Resources */ = {isa = PBXBuildFile; fileRef = BD9D8C1A289AED9500F2C561 /* jpg.webp */; };
 		BDC7AC4B289AC42E004D58B6 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC7AC4A289AC42E004D58B6 /* CameraViewController.swift */; };
 		BDD49C702898621E00298E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD49C6F2898621E00298E13 /* AppDelegate.swift */; };
 		BDD49C722898621E00298E13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD49C712898621E00298E13 /* SceneDelegate.swift */; };
@@ -48,6 +51,9 @@
 		BD9D06EE28997DF100D745EE /* Screen Shot 2022-08-02 at 11.44.02 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2022-08-02 at 11.44.02 AM.png"; sourceTree = "<group>"; };
 		BD9D06F22899812100D745EE /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		BD9D07742899ACC500D745EE /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		BD9D8C16289AE91400F2C561 /* Image from iOS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Image from iOS.jpg"; sourceTree = "<group>"; };
+		BD9D8C18289AED1600F2C561 /* Image from iOS (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Image from iOS (1).jpg"; sourceTree = "<group>"; };
+		BD9D8C1A289AED9500F2C561 /* jpg.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = jpg.webp; sourceTree = "<group>"; };
 		BDC7AC4A289AC42E004D58B6 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		BDD49C6C2898621E00298E13 /* ToDoYourPart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoYourPart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD49C6F2898621E00298E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,10 +129,13 @@
 				BD9D07742899ACC500D745EE /* profileViewController.swift */,
 				BDFB7AC728999FAE00BBC2D7 /* MonthlyChalViewController.swift */,
 				BDD49C7B2898621F00298E13 /* Assets.xcassets */,
+				BD9D8C1A289AED9500F2C561 /* jpg.webp */,
 				BDD49C7D2898621F00298E13 /* LaunchScreen.storyboard */,
 				BDD49C802898621F00298E13 /* Info.plist */,
 				BDD49C782898621E00298E13 /* ToDoYourPart.xcdatamodeld */,
+				BD9D8C18289AED1600F2C561 /* Image from iOS (1).jpg */,
 				BD9D06ED28997D0E00D745EE /* cam.webp */,
+				BD9D8C16289AE91400F2C561 /* Image from iOS.jpg */,
 				BD9D06F22899812100D745EE /* profile.png */,
 				BD9D06EE28997DF100D745EE /* Screen Shot 2022-08-02 at 11.44.02 AM.png */,
 			);
@@ -255,11 +264,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9D06EA2899777900D745EE /* long-lines-straight-line-transparent-7.png in Resources */,
+				BD9D8C19289AED1600F2C561 /* Image from iOS (1).jpg in Resources */,
 				BD9D06F32899812100D745EE /* profile.png in Resources */,
 				BDD49C7F2898621F00298E13 /* LaunchScreen.storyboard in Resources */,
 				BD9D06EF28997DF100D745EE /* Screen Shot 2022-08-02 at 11.44.02 AM.png in Resources */,
+				BD9D8C1B289AED9500F2C561 /* jpg.webp in Resources */,
 				BDD49C7C2898621F00298E13 /* Assets.xcassets in Resources */,
 				BDD49C772898621E00298E13 /* Main.storyboard in Resources */,
+				BD9D8C17289AE91400F2C561 /* Image from iOS.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
