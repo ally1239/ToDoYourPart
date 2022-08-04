@@ -25,11 +25,11 @@ class ViewController: UIViewController {
                    "Climate change is creating a refugee crisis",
                    "We use more of the earth's resources than it can renew"]
             func pickFact() -> String {
-             var random = Int.random(in: 1..<14)
-             var fact = facts[random]
+                let random = Int.random(in: 1..<13)
+                let fact = facts[random]
              return fact
             }
-            var randomFact = pickFact()
+        let randomFact = pickFact()
             dailyFact.text = randomFact
 
 
